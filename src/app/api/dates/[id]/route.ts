@@ -1,5 +1,5 @@
 import prisma from "@/lib/prisma";
-import { Date } from "@prisma/client";
+import { Event } from "@prisma/client";
 import { NextResponse } from "next/server";
 import { object, string, date } from "yup";
 
@@ -7,8 +7,8 @@ interface Segment {
   params: { id: string };
 }
 
-async function getDate(id: string): Promise<Date | null> {
-  return await prisma.date.findFirst({ where: { id } });
+async function getDate(id: string): Promise<Event | null> {
+  return await prisma.event.findFirst({ where: { id } });
 }
 
 export async function GET(request: Request, segments: Segment) {
@@ -48,7 +48,7 @@ export async function PUT(request: Request, segments: Segment) {
       await request.json()
     );
 
-    const updatedDate = await prisma.date.update({
+    const updatedDate = await prisma.event.update({
       where: { id },
       data: {
         title,

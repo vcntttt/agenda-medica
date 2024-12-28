@@ -14,7 +14,7 @@ datasource db {
 }
 
 
-model Date {
+model Event {
   id String @id @default(uuid())
   title String
   start DateTime

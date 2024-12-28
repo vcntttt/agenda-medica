@@ -21,7 +21,7 @@ export async function GET(request: Request) {
     });
   }
 
-  const dates = await prisma.date.findMany({
+  const dates = await prisma.event.findMany({
     take: +take,
     skip: +skip,
   });
@@ -39,7 +39,7 @@ export async function POST(request: Request) {
     const { title, start, end } = await postSchema.validate(
       await request.json()
     );
-    const date = await prisma.date.create({
+    const date = await prisma.event.create({
       data: {
         title,
         start,
