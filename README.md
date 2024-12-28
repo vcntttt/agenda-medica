@@ -17,11 +17,12 @@ mv .env.template .env
 ```
 3. Reemplazar correctamente variables de entorno
 
-4. Ejecutar [seed](http://localhost:3000/api/seed).
+4. Instalar dependencias
+5. Levantar entorno de desarrollo y bajarlo
 
-5. Inicializar prisma
+6. Prisma
 ```bash
-bunx prisma init
 bunx prisma migrate dev
 bunx prisma generate
 ```
+7. Ejecutar [seed](http://localhost:3000/api/seed).
