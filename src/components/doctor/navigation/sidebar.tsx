@@ -6,8 +6,8 @@ import { navLinks } from "./nav-links";
 
 export default function Sidebar() {
   return (
-    <div className="hidden border-r shadow-xl md:block h-screen">
-      <div className="flex h-full max-h-screen flex-col gap-2 mt-2">
+    <div className="hidden border-r shadow-xl md:block overflow-y-hidden">
+      <div className="flex h-full flex-col gap-2 mt-2">
         <header className="">
           <div className="flex h-14 justify-between items-center px-4 lg:h-[60px] lg:px-6 text-black">
           <Link href="/" className="flex items-center gap-2 font-semibold">
