@@ -1,12 +1,8 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "../../ui/button";
-import { Calendar, LayoutDashboardIcon, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
-
-const navLinks = [
-  { path: "/doctor", label: "Dashboard", icon: <LayoutDashboardIcon  className="size-4"/> },
-  { path: "/doctor/agenda", label: "Agenda", icon: <Calendar className="size-4"/> },
-];
+import { navLinks } from "./nav-links";
 
 export default function MobileHeader( ) {
   return (

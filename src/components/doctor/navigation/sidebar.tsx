@@ -2,12 +2,7 @@ import { SquareActivityIcon } from "lucide-react";
 import Link from "next/link";
 import SidebarItem from "./sidebar-item";
 import DoctorProfile from './doctor-profile';
-import { Calendar, LayoutDashboardIcon } from "lucide-react";
-
-const navLinks = [
-  { path: "/doctor", label: "Dashboard", icon: <LayoutDashboardIcon  className="size-4"/> },
-  { path: "/doctor/agenda", label: "Agenda", icon: <Calendar className="size-4"/> },
-];
+import { navLinks } from "./nav-links";
 
 export default function Sidebar() {
   return (
