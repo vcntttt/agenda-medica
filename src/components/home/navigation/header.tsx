@@ -1,6 +1,6 @@
 import { HomeIcon, User2Icon } from "lucide-react";
 import Link from "next/link";
-import ActiveLink from "@/components/navbar/active-link";
+import ActiveLink from "@/components/home/navigation/active-link";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [

@@ -1,0 +1,8 @@
+ :root {
+ /* --fc-button-active-bg-color: hsl(173.4 80.4% 40%);
+  --fc-button-active-border-color: hsl(173.4 80.4% 40%); */
+}
+
+.fc-event {
+  cursor: pointer;
+}

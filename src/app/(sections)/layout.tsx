@@ -1,4 +1,4 @@
-import Header from "@/components/navbar/header";
+import Header from "@/components/home/navigation/header";
 
 export default function RootLayout({
   children,
