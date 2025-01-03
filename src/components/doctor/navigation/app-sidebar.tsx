@@ -19,6 +19,7 @@ import {
   SquareActivityIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { signOut } from "@/auth";
 
 const items = [
   {
@@ -70,9 +71,16 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter>
-        <Button>
-          Cerrar sesión
-        </Button>
+        <form
+          action={async () => {
+            "use server";
+            await signOut({ redirectTo: "/api/auth/signin" });
+          }}
+        >
+          <Button type="submit" className="w-full">
+            Cerrar sesión
+          </Button>
+        </form>
       </SidebarFooter>
     </Sidebar>
   );

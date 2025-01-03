@@ -1,4 +1,7 @@
+import { redirect } from "next/navigation";
+
 export default function Home() {
+  redirect('/doctor');
   return (
     <main className="grid items-center justify-center p-8 pb-20 gap-16 sm:p-20 h-full">
       <h1 className="text-4xl">Hola</h1>

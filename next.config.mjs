@@ -9,6 +9,14 @@ const nextConfig = {
         // search: '',
         // pathname: 'images',
       },
+      {
+        protocol: 'https',
+        hostname: 'external-content.duckduckgo.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+      },
     ],
   },
 }
